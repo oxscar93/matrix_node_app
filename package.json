@@ -1,0 +1,27 @@
+{
+  "name": "webservice",
+  "version": "1.0.0",
+  "description": "backend node",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "nodemon server.js",
+    "test": "jest --testTimeout=10000"
+  },
+  "author": "oscar lescano",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "nodemon": "^1.18.6",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
